@@ -1,0 +1,41 @@
+h1 {
+	display: inline-block;
+	border-bottom: 2px dashed rgba(0,0,0,0.9);
+	text-decoration: none;
+	color: #777;
+}
+body {
+	font-family: "Helvetica", sans-serif;/* Установка шрифта семейства sans-serif */
+}
+.fontsize20 {
+	font-size: 20px;/* Размер шрифта 20px */
+	line-height: 25px;/* Междустрочный интервал 25px */
+	text-indent: 40px;/* Отступ первой строки */
+	letter-spacing: 1px;/* Межбуквенный интервал 1px */
+	word-spacing: 5px;/* Интервал между словами 5px */
+}
+.bg-box {
+	width: 500px;
+	height: 284px;
+	background-color: green;/*Цвет фона элемента*/
+	background-image: url('../img/1.jpg'), url('../img/2.png'), url('../img/3.png'), url('../img/4.png'), url('../img/5.png');/*Устанавливаем изображения*/
+	background-position: center, center bottom, center top, left bottom, right bottom;/*Начальное положение фонового изображения*/
+	background-repeat: no-repeat, repeat-x, repeat-x, repeat-y, repeat-y;/*Определяем, как будет повторяться фоновое изображение*/
+	background-size: 200px, 120px, 18px, 15px, 15px;/*Масштабируем фоновое изображение согласно нужным размерам*/
+}
+div[class^='box'] {
+	width: 100px;
+	height: 100px;
+}
+.box1 {
+	background: linear-gradient(green 40%, white 0);
+	background-size: 100% 20px;
+}
+.box2 {
+	background: rgb(0,0,0);
+	background: linear-gradient(135deg, rgba(0,0,0,1) 18%, rgba(128,128,128,1) 18%, rgba(128,128,128,1) 82%, rgba(0,0,0,1) 82%);
+}
+.box3 {
+	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(255,0,0,1) 19%, rgba(0,0,0,1) 20%);
+}
